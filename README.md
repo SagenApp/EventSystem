@@ -46,8 +46,14 @@ public class MyListener implements Listener {
 }
 ```
 
-**Registering the listener**
+**Registering the listener and fire an event**
 ```java
 EventDispatcher dispatcher = new EventDispatcher();
+
+// register a listener to the dispatcher
 dispatcher.registerListener(new MyListener());
+
+// fire an event
+MyFancyEvent event = new MyFancyEvent();
+dispatcher.fire(event);
 ```
