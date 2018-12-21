@@ -54,6 +54,6 @@ EventDispatcher dispatcher = new EventDispatcher();
 dispatcher.registerListener(new MyListener());
 
 // fire an event
-MyFancyEvent event = new MyFancyEvent();
+MyFancyEvent event = new MyFancyEvent(myVariable);
 dispatcher.fire(event);
 ```
