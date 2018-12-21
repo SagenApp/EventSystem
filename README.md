@@ -40,7 +40,7 @@ public class MyListener implements Listener {
     
     @EventHandler(priorty = EventPriority.NORMAL, ignoreCancelled = true)
     public void onMyFancyEvent(MyFancyEvent event) {
-        // handle the event and cancel event if fitting.
+        // handle the event
     }
     
 }
