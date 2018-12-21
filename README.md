@@ -3,7 +3,7 @@
 
 ## Usage
 **Creating an event**
-```
+```java
 import app.sagen.event.*;
 
 public class MyFancyEvent implements Event, Cancelable {
@@ -33,7 +33,7 @@ public class MyFancyEvent implements Event, Cancelable {
 ```
 
 **Creating a listener**
-```
+```java
 import app.sagen.event.*;
 
 public class MyListener implements Listener {
@@ -44,4 +44,10 @@ public class MyListener implements Listener {
     }
     
 }
+```
+
+**Registering the listener**
+```java
+EventDispatcher dispatcher = new EventDispatcher();
+dispatcher.registerListener(new MyListener());
 ```
