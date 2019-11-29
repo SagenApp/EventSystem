@@ -22,4 +22,12 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub SagenApp Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/SagenApp/EventSystem</url>
+        </repository>
+    </distributionManagement>
+
 </project>
