@@ -17,7 +17,7 @@ jobs:
     - name: setup-maven-settings
       uses: s4u/maven-settings-action@v1
       with:
-        servers: '[{"id": "github", "SagenApp": "x-access-token", "password": "${GITHUB_TOKEN}"}]'
+        servers: '[{"id": "github", "SagenKoder": "x-access-token", "password": "${GITHUB_TOKEN}"}]'
 
     - name: Publish to GitHub
       run: mvn -Dmaven.wagon.http.pool=false clean deploy
