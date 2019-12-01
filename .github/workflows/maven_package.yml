@@ -20,4 +20,4 @@ jobs:
         servers: '[{"id": "github", "SagenKoder": "x-access-token", "password": "${GITHUB_TOKEN}"}]'
 
     - name: Publish to GitHub
-      run: mvn -Dmaven.wagon.http.pool=false clean deploy
+      run: mvn -Dmaven.wagon.http.pool=false -X clean deploy 
